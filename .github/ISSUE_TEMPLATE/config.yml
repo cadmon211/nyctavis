@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🌐 Website
+    url: https://nyctavis.com
+    about: Learn more about NYCTAVIS.
+  - name: 📧 Email support
+    url: mailto:hello@nyctavis.com
+    about: Contact us directly.

@@ -1,0 +1,14 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/
+.idea/
+
+# Never commit the proprietary app or build artifacts here
+*.exe
+*.msix
+*.msixbundle
+dist/
+build/
