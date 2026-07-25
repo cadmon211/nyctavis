@@ -105,6 +105,7 @@
   .shot{background:var(--card2);border:1px solid var(--border);border-radius:14px;overflow:hidden}
   .shot .ph{aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;
     background:repeating-linear-gradient(45deg,#0A1F31,#0A1F31 12px,#0C2438 12px,#0C2438 24px);color:var(--muted);font-size:13px;font-weight:600;text-align:center;padding:16px}
+  .shot img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;object-position:top}
   .shot .cap{padding:12px 14px;font-size:13px;color:var(--muted);font-weight:600;border-top:1px solid var(--border)}
 
   /* PRIVACY BAND */
@@ -231,11 +232,11 @@
   <div class="wrap">
     <div class="kicker" data-i18n="s_kicker">A look inside</div>
     <h2 data-i18n="s_title">Clean, calm, in control</h2>
-    <p class="lead" data-i18n="s_lead">A modern interface in English, Spanish and French. Replace these with real screenshots before launch.</p>
+    <p class="lead" data-i18n="s_lead">A modern interface in English, Spanish and French.</p>
     <div class="shots">
-      <div class="shot"><div class="ph" data-i18n="s1">Dashboard — storage overview &amp; scan options</div><div class="cap" data-i18n="s1c">Dashboard</div></div>
-      <div class="shot"><div class="ph" data-i18n="s2">Recommendations — reclaimable items with evidence</div><div class="cap" data-i18n="s2c">Recommendations</div></div>
-      <div class="shot"><div class="ph" data-i18n="s3">Quarantine — review before anything is removed</div><div class="cap" data-i18n="s3c">Quarantine</div></div>
+      <div class="shot"><img src="assets/screenshot-dashboard.png" alt="NYCTAVIS dashboard" loading="lazy"><div class="cap" data-i18n="s1c">Dashboard</div></div>
+      <div class="shot"><img src="assets/screenshot-recommendations.png" alt="NYCTAVIS recommendations" loading="lazy"><div class="cap" data-i18n="s2c">Recommendations</div></div>
+      <div class="shot"><img src="assets/screenshot-quarantine.png" alt="NYCTAVIS quarantine" loading="lazy"><div class="cap" data-i18n="s3c">Quarantine</div></div>
     </div>
   </div>
 </section>
@@ -296,6 +297,7 @@
       <a href="#faq" data-i18n="nav_faq">FAQ</a>
       <a href="https://github.com/cadmon211/nyctavis" target="_blank" rel="noopener">GitHub</a>
       <a href="mailto:hello@nyctavis.com">Contact</a>
+      <a href="privacy.html">Privacy</a>
     </div>
     <div>© <span id="year"></span> NYCTAVIS</div>
   </div>
@@ -321,7 +323,7 @@ const I18N = {
     f5t:"Safe by default",f5p:"Nothing is deleted without confirmation. Items go to quarantine first — reversible.",
     f6t:"Private & local",f6p:"Everything runs on your PC. No cloud upload, no telemetry, no account required.",
     s_kicker:"A look inside",s_title:"Clean, calm, in control",
-    s_lead:"A modern interface in English, Spanish and French. Replace these with real screenshots before launch.",
+    s_lead:"A modern interface in English, Spanish and French.",
     s1:"Dashboard — storage overview & scan options",s1c:"Dashboard",
     s2:"Recommendations — reclaimable items with evidence",s2c:"Recommendations",
     s3:"Quarantine — review before anything is removed",s3c:"Quarantine",
@@ -359,7 +361,7 @@ const I18N = {
     f5t:"Seguro por defecto",f5p:"Nada se borra sin confirmación. Los elementos van primero a cuarentena — reversible.",
     f6t:"Privado y local",f6p:"Todo se ejecuta en tu PC. Sin subida a la nube, sin telemetría, sin cuenta.",
     s_kicker:"Por dentro",s_title:"Limpio, tranquilo, bajo control",
-    s_lead:"Una interfaz moderna en inglés, español y francés. Sustituye estas por capturas reales antes del lanzamiento.",
+    s_lead:"Una interfaz moderna en inglés, español y francés.",
     s1:"Panel — resumen de almacenamiento y opciones de análisis",s1c:"Panel",
     s2:"Recomendaciones — elementos recuperables con evidencia",s2c:"Recomendaciones",
     s3:"Cuarentena — revisa antes de eliminar nada",s3c:"Cuarentena",
@@ -397,7 +399,7 @@ const I18N = {
     f5t:"Sûr par défaut",f5p:"Rien n'est supprimé sans confirmation. Les éléments passent d'abord en quarantaine — réversible.",
     f6t:"Privé et local",f6p:"Tout s'exécute sur votre PC. Aucun envoi vers le cloud, aucune télémétrie, aucun compte.",
     s_kicker:"Un aperçu",s_title:"Propre, calme, sous contrôle",
-    s_lead:"Une interface moderne en anglais, espagnol et français. Remplacez-les par de vraies captures avant le lancement.",
+    s_lead:"Une interface moderne en anglais, espagnol et français.",
     s1:"Tableau de bord — vue du stockage et options d'analyse",s1c:"Tableau de bord",
     s2:"Recommandations — éléments récupérables avec preuves",s2c:"Recommandations",
     s3:"Quarantaine — vérifiez avant toute suppression",s3c:"Quarantaine",
