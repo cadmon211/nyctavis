@@ -45,7 +45,10 @@ You can either serve the same site on both domains (done automatically if you ad
 both as custom domains) or, in Cloudflare → the `.app` zone → **Redirect Rules**,
 send `nyctavis.app/*` to `https://nyctavis.com/$1` (301).
 
-## 4. Later
-- Publish pre-release builds under **Releases** (the README links there).
-- When the Microsoft Store listing is live, swap the "coming soon" badges for the
-  real Store link.
+## 4. Store link
+
+The public Microsoft Store listing is live at:
+
+`https://apps.microsoft.com/detail/9NCP8J7FT020`
+
+Keep this canonical product link in the website and README when updating launch copy.
